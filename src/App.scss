@@ -28,23 +28,32 @@ h6 {
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(#ffffff75, #ffffff00);
+  h3 {
+    padding: 1rem 0 2rem 1rem;
+  }
 }
 
-.App-header h3 {
-  padding: 1rem 0 2rem 1rem;
-}
-
-.searchbar {
+form {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem;
-}
-
-input {
-  padding: 0.4rem;
-  border-radius: 4px;
-  border: 2px solid grey;
+  label {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0 1rem 1rem;
+    input {
+      padding: 0.4rem;
+      border-radius: 4px;
+      border: 2px solid grey;
+    }
+  }
+  button {
+    padding: 0.4rem;
+    margin: 1rem 1rem 1rem .5rem;
+    border-radius: 4px;
+    border: 2px solid grey;
+  }
 }
 
 .profile {
@@ -54,10 +63,10 @@ input {
   background-image: linear-gradient(#ffffff00, #ffffff15);
   .profile-name {
     h3 {
-      padding: .5rem 0;
+      padding: 0.5rem 0;
     }
     h5 {
-      padding: .2rem 0;
+      padding: 0.2rem 0;
     }
   }
   img {
@@ -65,7 +74,6 @@ input {
     border-radius: 100px;
     margin: 2rem;
   }
-
 }
 
 .stats {
@@ -80,6 +88,14 @@ input {
     flex-direction: column;
     margin: 1rem;
   }
+}
+
+.heat-map {
+  // HEAT MAP plugin source: https://ghchart.rshah.org/
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, .3);
 }
 
 .followers {

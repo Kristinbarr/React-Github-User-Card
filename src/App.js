@@ -50,8 +50,6 @@ class App extends React.Component {
   }
 
   render() {
-    // console.log('state', this.state)
-    // console.log('props', this.props)
     const { userName, followers, userInfo } = this.state
 
     return (
@@ -84,6 +82,9 @@ class App extends React.Component {
               <h5> Following</h5>
             </div>
           </div>
+        </div>
+        <div className="heat-map">
+          <img src="http://ghchart.rshah.org/kristinbarr" alt="Kristin's Github chart" />
         </div>
         <FollowerList
           userName={userName}
